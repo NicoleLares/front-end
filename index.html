@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos World</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados */
+        h1 {
+            color: #28a745; /* Verde */
+            font-weight: 700;
+        }
+
+        .table {
+            background-color: #f8f9fa; /* Fondo claro para la tabla */
+        }
+
+        .table th {
+            background-color: #28a745; /* Verde para los encabezados */
+            color: white;
+            text-align: center;
+        }
+
+        .table td {
+            text-align: center;
+            background-color: #e9ecef; /* Gris claro para las celdas */
+        }
+
+        .table tr:hover td {
+            background-color: #d6d9db; /* Gris más oscuro en hover */
+        }
+
+        .btn-custom {
+            background-color: #28a745; /* Verde */
+            border-color: #28a745; /* Verde */
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838; /* Verde más oscuro */
+            border-color: #218838; /* Verde más oscuro */
+        }
+
+        .search-area {
+            margin-bottom: 20px;
+        }
+
+        .table-area {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Base de Datos World</h1>
+
+    <div class="text-center mb-4">
+        <button id="btnMiPais" class="btn btn-warning">Mi país</button>
+        <button id="btnMiContinente" class="btn btn-primary">Mi continente</button>
+    </div>
+
+    <!-- Área de tabla -->
+    <div class="table-area">
+        <table id="recordsTable" class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Continent</th>
+                    <th>Region</th>
+                    <th>SurfaceArea</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- jQuery, Popper.js y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Archivo JS principal -->
+<script src="./js/main.js"></script>
+</body>
+</html>
+
+
